@@ -1,0 +1,25 @@
+.footer {
+    background-color: palevioletred; /* SaddleBrown */
+    color: #F5DEB3; /* Wheat */
+    padding: 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-content .brand h2 {
+    font-size: 24px;
+}
+.footer-content .links a, .footer-content .socials a {
+    color: #F5DEB3;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid pink; /* Sienna */
+}

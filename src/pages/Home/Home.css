@@ -1,0 +1,43 @@
+/* General Layout */
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    aspect-ratio: 16 / 9; /* Fix the aspect ratio for all videos */
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container without distortion */
+    z-index: -1; /* Set z-index to -1 to make sure video stays behind the content */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1; /* Set z-index to 1 so the content stays above the video */
+    ;
+    padding: 20px;
+    color: white;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size: 1.25rem;
+  }
+  
