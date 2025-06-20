@@ -66,11 +66,11 @@ const Shop = () => {
     return (
         <div className='shop-container'>
             <h1>Shop</h1>
-            <select ref={gendreInput} onChange={handleGendreChange}>
+            {pathname == '/skin'&&<select ref={gendreInput} onChange={handleGendreChange}>
                 <option value="all">All</option>
                 <option value="men">Men</option>
                 <option value="women">Women</option>
-            </select>
+            </select>}
             <div className='shop-products'>
                 {filtredByGendre.map(product => (
                     <Product product={product} />
